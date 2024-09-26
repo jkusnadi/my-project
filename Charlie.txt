@@ -9,3 +9,46 @@ ctrl+l clears the screen
 git log --all --decorate --oneline --graph
 
 git push origin 
+
+
+made changes to Charlie.txt
+
+git add Charlie.txt
+git commit -m "Charlie's updated"
+git push origin
+
+
+added devo.txt on GitHub, not it is missing in the local drive
+git pull 
+
+create a new file in the local drive
+touch echo.txt
+
+#add any file that has changed in this directory or subdirectories to github
+git add .
+git commit -m "Fifth Commit"
+git push
+
+#Fetcn & Merge vs Pull
+#git fetch gathers any info/commits from the target branch that do not exist in the current branch and stores them in your local repository. However, it does not merge them with your current branch. This is particularly useful if you need to keep your repository up to date, but are working on something that might break if you update your files. To integrate the commits into your current branch, you must use git merge afterwards.
+git fetch
+git merge origin
+
+#edit Fred.txt
+
+#selects all files that have changed and made a commit
+git commit -a -m "Seventh Commit: Edited Fred"
+git status
+#optional
+git reflog
+
+#can change Fred again
+git add fred.txt
+git commit -m "Seventh Commit: JK Test"
+git push origin
+
+
+#Note
+#Git clone is done just once
+#Git add -> Git commit -> Git push
+#Git commit -a -> git push (shortcut)
