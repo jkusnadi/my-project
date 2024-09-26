@@ -1,0 +1,11 @@
+git status
+git add Charlie.txt
+git config --global user.email "alfaagaphe@gmail.com"
+git config --global user.name "Jeremy Kusnadi"
+git commit -m "third commit"
+
+ctrl+l clears the screen
+
+git log --all --decorate --oneline --graph
+
+git push origin 
